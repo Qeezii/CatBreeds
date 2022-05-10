@@ -11,27 +11,33 @@ struct ContentView: View {
     
     @StateObject var classifierViewModel: ClassifierViewModel = .init()
     @State var sourceType: UIImagePickerController.SourceType = .photoLibrary
-    @State var isImagePickerDisplay = false
+    @State var isImagePickerDisplay: Bool = false
     
     var body: some View {
         NavigationView {
             VStack {
                 Spacer()
                 ZStack {
-                    VStack {
-                        Image(uiImage: classifierViewModel.selectedImage ?? UIImage())
-                            .resizable()
-                            .scaledToFit()
-                        Text(classifierViewModel.resultClassify ?? "")
-                            .font(.title2)
-                        .padding()
+                    ScrollView {
+                        VStack {
+                            Image(uiImage: classifierViewModel.selectedImage ?? UIImage())
+                                .resizable()
+                                .scaledToFit()
+                            
+                            BarChartsVView(classifierViewModel: classifierViewModel)
+                                .opacity(classifierViewModel.resultClassify != nil ? 100 : 0)
+                        }
                     }
                     
+                    ProgressView()
+                        .opacity(classifierViewModel.opacityForDownloadingInProgress)
+                    
                     buttonsVStack
-                        .opacity(classifierViewModel.selectedImage != nil ? 0 : 100)
+                        .opacity(classifierViewModel.opacityForDownloadingEnd)
                 }
                 
                 Spacer()
+                
                 buttonsHStack
                     .opacity(classifierViewModel.selectedImage != nil ? 100 : 0)
             }
@@ -49,13 +55,17 @@ struct ContentView: View {
     var buttonsVStack: some View {
         VStack {
             Button {
+#if targetEnvironment(simulator)
+                print("You are using a simulator. The camera is not available.")
+#else
                 self.sourceType = .camera
                 self.isImagePickerDisplay.toggle()
+#endif
             } label: {
                 Image(systemName: "camera")
                 Text("Camera")
             }.padding()
-
+            
             Button {
                 self.sourceType = .photoLibrary
                 self.isImagePickerDisplay.toggle()
@@ -63,28 +73,46 @@ struct ContentView: View {
                 Image(systemName: "photo.on.rectangle.angled")
                 Text("Library")
             }.padding()
+            
+            NavigationLink("See all cat breeds") {
+                AllCatBreedsView(classifierViewModel: classifierViewModel)
+            }
         }
         .font(.largeTitle)
+        .foregroundColor(.black)
     }
     
     var buttonsHStack: some View {
         HStack {
             Button {
+#if targetEnvironment(simulator)
+                print("You are using a simulator. The camera is not available.")
+#else
                 self.sourceType = .camera
                 self.isImagePickerDisplay.toggle()
+#endif
             } label: {
                 Image(systemName: "camera")
-            }.padding()
-
+            }
+            .padding()
+            .font(.largeTitle)
+            
             Button {
                 self.sourceType = .photoLibrary
                 self.isImagePickerDisplay.toggle()
             } label: {
                 Image(systemName: "photo.on.rectangle.angled")
-            }.padding()
+            }
+            .padding()
+            .font(.largeTitle)
+            
+            NavigationLink("See all cat breeds") {
+                AllCatBreedsView(classifierViewModel: classifierViewModel)
+            }
         }
-        .font(.largeTitle)
+        .foregroundColor(.black)
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
