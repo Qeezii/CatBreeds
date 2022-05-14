@@ -8,7 +8,7 @@
 import Foundation
 import CoreLocation
 import Vision
-import UIKit
+import SwiftUI
 import ServiceLocator
 import NetworkReceive
 
@@ -26,20 +26,28 @@ final class ClassifierViewModel: ObservableObject {
     var titleBarCharts: String = "Top 3 results"
     var catBreedsArray: [CatBreedsResponse] = []
     var catBreedsDict: [CatBreedsResponse.ID : CatBreedsResponse] = [:]
-    let modelName = MobileNetV2()
-//    let modelName = WhatIsCatBreedsModel()
+    let modelName: MobileNetV2 = {
+        do {
+            let config = MLModelConfiguration()
+            return try MobileNetV2(configuration: config)
+        } catch {
+            print(error)
+            fatalError("Couldn`t create MlModel")
+        }
+    }()
     
     init() {
         if let api = Api.shared.catBreeds {
             getCatBreedsReceive(for: api)
+        } else {
+            print("Bad Api")
         }
     }
     
     func classifierImage() {
         self.opacityForDownloadingInProgress = 100.0
         self.opacityForDownloadingEnd = 0.0
-        
-        self.barChartsData = [] // может можно лучше придумать
+        self.barChartsData = []
         
         guard let model = try? VNCoreMLModel(for: modelName.model) else { return }
         guard let image = selectedImage else { return }
@@ -78,7 +86,7 @@ final class ClassifierViewModel: ObservableObject {
         self.opacityForDownloadingInProgress = 0.0
     }
     
-    func getCatBreedsReceive(for url: URL) {
+    private func getCatBreedsReceive(for url: URL) {
         guard let networkReceive = networkReceive else {
             return
         }
@@ -90,7 +98,7 @@ final class ClassifierViewModel: ObservableObject {
             }
             self.opacityForDownloadingInProgress = 0.0
             self.opacityForDownloadingEnd = 100.0
-            print("\n DataDownloadEnd \n")
+            print("\n Data Download End \n")
         }
     }
 }

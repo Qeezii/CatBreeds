@@ -8,15 +8,18 @@
 import SwiftUI
 
 struct BarHView: View {
+    
     var name: String
     var values: Double
     var scaleFactor: Double
 
     var body: some View {
+        
         GeometryReader { gr in
 
             let padHeight = gr.size.height * 0.15
             VStack(spacing:0) {
+                
                 Spacer()
                     .frame(height: padHeight)
 

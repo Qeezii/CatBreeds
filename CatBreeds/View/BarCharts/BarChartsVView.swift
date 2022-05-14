@@ -12,9 +12,11 @@ struct BarChartsVView: View {
     @ObservedObject var classifierViewModel: ClassifierViewModel
     
     var body: some View {
+        
         ScrollView() {
             VStack {
                 VStack {
+                    
                     Spacer()
                         .frame(height:20)
                     

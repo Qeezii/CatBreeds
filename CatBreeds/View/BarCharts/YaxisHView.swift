@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct YaxisHView: View {
-//    var data: [DataItem]
+
     var data: [(String, Double)]
     
     var body: some View {

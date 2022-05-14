@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ChartAreaHView: View {
+    
     var data: [(String, Double)]
     var scaleFactor: Double
     

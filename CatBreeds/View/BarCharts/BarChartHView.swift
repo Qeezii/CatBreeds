@@ -12,6 +12,7 @@ struct BarChartHView: View {
     @ObservedObject var classifierViewModel: ClassifierViewModel
     
     var body: some View {
+        
         GeometryReader { gr in
             let axisWidth = gr.size.width * 0.21
             let axisHeight = gr.size.height * 0.5
@@ -22,7 +23,7 @@ struct BarChartHView: View {
             let tickMarks = AxisParameters.getTicks(top: Int(maxValue))
             let scaleFactor = (fullChartWidth * 0.95) / CGFloat(tickMarks[tickMarks.count-1])
             
-            VStack(spacing:0) {
+            VStack(spacing: 0) {
                 
                 ChartHeaderView(title: classifierViewModel.titleBarCharts)
                     .padding(.bottom, 25)

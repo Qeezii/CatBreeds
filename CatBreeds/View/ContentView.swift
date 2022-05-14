@@ -14,9 +14,12 @@ struct ContentView: View {
     @State var isImagePickerDisplay: Bool = false
     
     var body: some View {
+        
         NavigationView {
             VStack {
+                
                 Spacer()
+                
                 ZStack {
                     ScrollView {
                         VStack {
@@ -40,6 +43,7 @@ struct ContentView: View {
                 
                 buttonsHStack
                     .opacity(classifierViewModel.selectedImage != nil ? 100 : 0)
+                
             }
             .onChange(of: classifierViewModel.selectedImage, perform: { _ in
                 classifierViewModel.classifierImage()

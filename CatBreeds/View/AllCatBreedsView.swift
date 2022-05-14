@@ -12,6 +12,7 @@ struct AllCatBreedsView: View {
     @ObservedObject var classifierViewModel: ClassifierViewModel
     
     var body: some View {
+        
         List(classifierViewModel.catBreedsArray) { catBreed in
             NavigationLink(destination: CatBreedDetail(catBreed: catBreed)) {
                 ListDetailView(catBreed: catBreed)
@@ -22,8 +23,11 @@ struct AllCatBreedsView: View {
 }
 
 struct ListDetailView: View {
+    
     var catBreed: CatBreedsResponse
+    
     var body: some View {
+        
         VStack {
             HStack {
                 Text(catBreed.name).font(.title)
