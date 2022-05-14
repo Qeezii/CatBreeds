@@ -7,18 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C057882282A5B0800C1F652 /* AllCatBreedsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C057881282A5B0800C1F652 /* AllCatBreedsView.swift */; };
+		9C057884282A5F7D00C1F652 /* CatBreedDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C057883282A5F7D00C1F652 /* CatBreedDetail.swift */; };
+		9C057886282A971000C1F652 /* SFSafariViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C057885282A971000C1F652 /* SFSafariViewWrapper.swift */; };
+		9C05788A282AB92A00C1F652 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9C057889282AB92A00C1F652 /* Resnet50.mlmodel */; };
+		9C05788C282ABA0400C1F652 /* WhatIsCatBreedsModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9C05788B282ABA0400C1F652 /* WhatIsCatBreedsModel.mlmodel */; };
+		9C201797282ADAC6007179D4 /* BarChartsVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C201796282ADAC6007179D4 /* BarChartsVView.swift */; };
+		9C20179B282ADF1E007179D4 /* AxisParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C20179A282ADF1E007179D4 /* AxisParameters.swift */; };
+		9C20179F282AE24B007179D4 /* ChartHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C20179E282AE24B007179D4 /* ChartHeaderView.swift */; };
+		9C2017AB282AE378007179D4 /* BarChartHView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2017AA282AE378007179D4 /* BarChartHView.swift */; };
+		9C2017AD282AE3BD007179D4 /* ChartAreaHView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2017AC282AE3BD007179D4 /* ChartAreaHView.swift */; };
+		9C2017AF282AE3E4007179D4 /* BarHView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2017AE282AE3E4007179D4 /* BarHView.swift */; };
+		9C2017B3282AE42D007179D4 /* YaxisHView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2017B2282AE42D007179D4 /* YaxisHView.swift */; };
 		9C67A8F42822BCA60090FADA /* CatBreedsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C67A8F32822BCA60090FADA /* CatBreedsApp.swift */; };
 		9C67A8F62822BCA60090FADA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C67A8F52822BCA60090FADA /* ContentView.swift */; };
 		9C67A8F82822BCA60090FADA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C67A8F72822BCA60090FADA /* Assets.xcassets */; };
 		9C67A8FB2822BCA60090FADA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C67A8FA2822BCA60090FADA /* Preview Assets.xcassets */; };
+		9C67A90B2822C97D0090FADA /* String+CapFirstLetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C67A90A2822C97D0090FADA /* String+CapFirstLetter.swift */; };
+		9C67A90D2822C9CB0090FADA /* ClassifierViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C67A90C2822C9CB0090FADA /* ClassifierViewModel.swift */; };
+		9C67A90F2822CA250090FADA /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9C67A90E2822CA250090FADA /* MobileNetV2.mlmodel */; };
+		9C67A9112822CA760090FADA /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C67A9102822CA760090FADA /* ImagePickerView.swift */; };
+		9C67A916282817F50090FADA /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C67A915282817F50090FADA /* Api.swift */; };
+		9C67A918282820D90090FADA /* CatBreedsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C67A917282820D90090FADA /* CatBreedsResponse.swift */; };
+		9C67A91B282823120090FADA /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C67A91A282823120090FADA /* Configurator.swift */; };
+		9C67A91E282823460090FADA /* NetworkReceive in Frameworks */ = {isa = PBXBuildFile; productRef = 9C67A91D282823460090FADA /* NetworkReceive */; };
+		9C67A920282823490090FADA /* ServiceLocator in Frameworks */ = {isa = PBXBuildFile; productRef = 9C67A91F282823490090FADA /* ServiceLocator */; };
+		9C67A922282826E70090FADA /* CatBreedsReceive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C67A921282826E70090FADA /* CatBreedsReceive.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C057881282A5B0800C1F652 /* AllCatBreedsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCatBreedsView.swift; sourceTree = "<group>"; };
+		9C057883282A5F7D00C1F652 /* CatBreedDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedDetail.swift; sourceTree = "<group>"; };
+		9C057885282A971000C1F652 /* SFSafariViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSafariViewWrapper.swift; sourceTree = "<group>"; };
+		9C057889282AB92A00C1F652 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
+		9C05788B282ABA0400C1F652 /* WhatIsCatBreedsModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = WhatIsCatBreedsModel.mlmodel; sourceTree = "<group>"; };
+		9C201796282ADAC6007179D4 /* BarChartsVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartsVView.swift; sourceTree = "<group>"; };
+		9C20179A282ADF1E007179D4 /* AxisParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxisParameters.swift; sourceTree = "<group>"; };
+		9C20179E282AE24B007179D4 /* ChartHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartHeaderView.swift; sourceTree = "<group>"; };
+		9C2017AA282AE378007179D4 /* BarChartHView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartHView.swift; sourceTree = "<group>"; };
+		9C2017AC282AE3BD007179D4 /* ChartAreaHView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartAreaHView.swift; sourceTree = "<group>"; };
+		9C2017AE282AE3E4007179D4 /* BarHView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarHView.swift; sourceTree = "<group>"; };
+		9C2017B2282AE42D007179D4 /* YaxisHView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YaxisHView.swift; sourceTree = "<group>"; };
 		9C67A8F02822BCA60090FADA /* CatBreeds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatBreeds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C67A8F32822BCA60090FADA /* CatBreedsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsApp.swift; sourceTree = "<group>"; };
 		9C67A8F52822BCA60090FADA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9C67A8F72822BCA60090FADA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C67A8FA2822BCA60090FADA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9C67A90A2822C97D0090FADA /* String+CapFirstLetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+CapFirstLetter.swift"; sourceTree = "<group>"; };
+		9C67A90C2822C9CB0090FADA /* ClassifierViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifierViewModel.swift; sourceTree = "<group>"; };
+		9C67A90E2822CA250090FADA /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
+		9C67A9102822CA760090FADA /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		9C67A913282817620090FADA /* NetworkReceive */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = NetworkReceive; path = ../NetworkReceive; sourceTree = "<group>"; };
+		9C67A915282817F50090FADA /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		9C67A917282820D90090FADA /* CatBreedsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsResponse.swift; sourceTree = "<group>"; };
+		9C67A919282822B00090FADA /* ServiceLocator */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ServiceLocator; path = ../ServiceLocator; sourceTree = "<group>"; };
+		9C67A91A282823120090FADA /* Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
+		9C67A921282826E70090FADA /* CatBreedsReceive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsReceive.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +70,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C67A91E282823460090FADA /* NetworkReceive in Frameworks */,
+				9C67A920282823490090FADA /* ServiceLocator in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C2017B9282AE4EA007179D4 /* BarCharts */ = {
+			isa = PBXGroup;
+			children = (
+				9C201796282ADAC6007179D4 /* BarChartsVView.swift */,
+				9C2017AA282AE378007179D4 /* BarChartHView.swift */,
+				9C2017AC282AE3BD007179D4 /* ChartAreaHView.swift */,
+				9C2017AE282AE3E4007179D4 /* BarHView.swift */,
+				9C2017B2282AE42D007179D4 /* YaxisHView.swift */,
+				9C20179E282AE24B007179D4 /* ChartHeaderView.swift */,
+			);
+			path = BarCharts;
+			sourceTree = "<group>";
+		};
+		9C2017BA282AE500007179D4 /* BarCharts */ = {
+			isa = PBXGroup;
+			children = (
+				9C20179A282ADF1E007179D4 /* AxisParameters.swift */,
+			);
+			path = BarCharts;
+			sourceTree = "<group>";
+		};
 		9C67A8E72822BCA60090FADA = {
 			isa = PBXGroup;
 			children = (
+				9C67A919282822B00090FADA /* ServiceLocator */,
+				9C67A913282817620090FADA /* NetworkReceive */,
 				9C67A8F22822BCA60090FADA /* CatBreeds */,
 				9C67A8F12822BCA60090FADA /* Products */,
+				9C67A91C282823460090FADA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,7 +122,12 @@
 			isa = PBXGroup;
 			children = (
 				9C67A8F32822BCA60090FADA /* CatBreedsApp.swift */,
-				9C67A8F52822BCA60090FADA /* ContentView.swift */,
+				9C67A91A282823120090FADA /* Configurator.swift */,
+				9C67A9012822C7540090FADA /* Model */,
+				9C67A9072822C7D20090FADA /* View */,
+				9C67A9032822C76B0090FADA /* ViewModel */,
+				9C67A9122827E0120090FADA /* UIRepresentable */,
+				9C67A9092822C9560090FADA /* Extensions */,
 				9C67A8F72822BCA60090FADA /* Assets.xcassets */,
 				9C67A8F92822BCA60090FADA /* Preview Content */,
 			);
@@ -65,6 +140,65 @@
 				9C67A8FA2822BCA60090FADA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9C67A9012822C7540090FADA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9C2017BA282AE500007179D4 /* BarCharts */,
+				9C67A90E2822CA250090FADA /* MobileNetV2.mlmodel */,
+				9C057889282AB92A00C1F652 /* Resnet50.mlmodel */,
+				9C05788B282ABA0400C1F652 /* WhatIsCatBreedsModel.mlmodel */,
+				9C67A915282817F50090FADA /* Api.swift */,
+				9C67A917282820D90090FADA /* CatBreedsResponse.swift */,
+				9C67A921282826E70090FADA /* CatBreedsReceive.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9C67A9032822C76B0090FADA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9C67A90C2822C9CB0090FADA /* ClassifierViewModel.swift */,
+			);
+			name = ViewModel;
+			path = View;
+			sourceTree = "<group>";
+		};
+		9C67A9072822C7D20090FADA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9C2017B9282AE4EA007179D4 /* BarCharts */,
+				9C67A8F52822BCA60090FADA /* ContentView.swift */,
+				9C057881282A5B0800C1F652 /* AllCatBreedsView.swift */,
+				9C057883282A5F7D00C1F652 /* CatBreedDetail.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9C67A9092822C9560090FADA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9C67A90A2822C97D0090FADA /* String+CapFirstLetter.swift */,
+			);
+			name = Extensions;
+			path = View;
+			sourceTree = "<group>";
+		};
+		9C67A9122827E0120090FADA /* UIRepresentable */ = {
+			isa = PBXGroup;
+			children = (
+				9C67A9102822CA760090FADA /* ImagePickerView.swift */,
+				9C057885282A971000C1F652 /* SFSafariViewWrapper.swift */,
+			);
+			path = UIRepresentable;
+			sourceTree = "<group>";
+		};
+		9C67A91C282823460090FADA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +217,10 @@
 			dependencies = (
 			);
 			name = CatBreeds;
+			packageProductDependencies = (
+				9C67A91D282823460090FADA /* NetworkReceive */,
+				9C67A91F282823490090FADA /* ServiceLocator */,
+			);
 			productName = CatBreeds;
 			productReference = 9C67A8F02822BCA60090FADA /* CatBreeds.app */;
 			productType = "com.apple.product-type.application";
@@ -137,8 +275,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C05788A282AB92A00C1F652 /* Resnet50.mlmodel in Sources */,
 				9C67A8F62822BCA60090FADA /* ContentView.swift in Sources */,
+				9C67A91B282823120090FADA /* Configurator.swift in Sources */,
+				9C057886282A971000C1F652 /* SFSafariViewWrapper.swift in Sources */,
+				9C20179F282AE24B007179D4 /* ChartHeaderView.swift in Sources */,
+				9C67A90D2822C9CB0090FADA /* ClassifierViewModel.swift in Sources */,
+				9C67A90B2822C97D0090FADA /* String+CapFirstLetter.swift in Sources */,
+				9C67A90F2822CA250090FADA /* MobileNetV2.mlmodel in Sources */,
+				9C67A9112822CA760090FADA /* ImagePickerView.swift in Sources */,
+				9C2017AD282AE3BD007179D4 /* ChartAreaHView.swift in Sources */,
+				9C05788C282ABA0400C1F652 /* WhatIsCatBreedsModel.mlmodel in Sources */,
+				9C67A916282817F50090FADA /* Api.swift in Sources */,
+				9C057882282A5B0800C1F652 /* AllCatBreedsView.swift in Sources */,
+				9C057884282A5F7D00C1F652 /* CatBreedDetail.swift in Sources */,
+				9C201797282ADAC6007179D4 /* BarChartsVView.swift in Sources */,
+				9C67A918282820D90090FADA /* CatBreedsResponse.swift in Sources */,
+				9C2017B3282AE42D007179D4 /* YaxisHView.swift in Sources */,
 				9C67A8F42822BCA60090FADA /* CatBreedsApp.swift in Sources */,
+				9C20179B282ADF1E007179D4 /* AxisParameters.swift in Sources */,
+				9C67A922282826E70090FADA /* CatBreedsReceive.swift in Sources */,
+				9C2017AB282AE378007179D4 /* BarChartHView.swift in Sources */,
+				9C2017AF282AE3E4007179D4 /* BarHView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,11 +428,13 @@
 				DEVELOPMENT_TEAM = TWQBM5NDZK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -284,7 +444,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -299,11 +459,13 @@
 				DEVELOPMENT_TEAM = TWQBM5NDZK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,7 +475,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -339,6 +501,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9C67A91D282823460090FADA /* NetworkReceive */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NetworkReceive;
+		};
+		9C67A91F282823490090FADA /* ServiceLocator */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ServiceLocator;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9C67A8E82822BCA60090FADA /* Project object */;
 }
