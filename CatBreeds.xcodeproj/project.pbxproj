@@ -30,9 +30,9 @@
 		9C67A916282817F50090FADA /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C67A915282817F50090FADA /* Api.swift */; };
 		9C67A918282820D90090FADA /* CatBreedsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C67A917282820D90090FADA /* CatBreedsResponse.swift */; };
 		9C67A91B282823120090FADA /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C67A91A282823120090FADA /* Configurator.swift */; };
-		9C67A91E282823460090FADA /* NetworkReceive in Frameworks */ = {isa = PBXBuildFile; productRef = 9C67A91D282823460090FADA /* NetworkReceive */; };
-		9C67A920282823490090FADA /* ServiceLocator in Frameworks */ = {isa = PBXBuildFile; productRef = 9C67A91F282823490090FADA /* ServiceLocator */; };
 		9C67A922282826E70090FADA /* CatBreedsReceive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C67A921282826E70090FADA /* CatBreedsReceive.swift */; };
+		9CAC880B2831407100956095 /* NetworkReceive in Frameworks */ = {isa = PBXBuildFile; productRef = 9CAC880A2831407100956095 /* NetworkReceive */; };
+		9CAC880D2831407400956095 /* ServiceLocator in Frameworks */ = {isa = PBXBuildFile; productRef = 9CAC880C2831407400956095 /* ServiceLocator */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +41,7 @@
 		9C057885282A971000C1F652 /* SFSafariViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSafariViewWrapper.swift; sourceTree = "<group>"; };
 		9C057889282AB92A00C1F652 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
 		9C05788B282ABA0400C1F652 /* WhatIsCatBreedsModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = WhatIsCatBreedsModel.mlmodel; sourceTree = "<group>"; };
+		9C0DF60928313F7D007E4DF3 /* NetworkReceive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkReceive.swift; path = Modules/NetworkReceive/Sources/NetworkReceive/NetworkReceive.swift; sourceTree = "<group>"; };
 		9C201796282ADAC6007179D4 /* BarChartsVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartsVView.swift; sourceTree = "<group>"; };
 		9C20179A282ADF1E007179D4 /* AxisParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxisParameters.swift; sourceTree = "<group>"; };
 		9C20179E282AE24B007179D4 /* ChartHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartHeaderView.swift; sourceTree = "<group>"; };
@@ -57,12 +58,12 @@
 		9C67A90C2822C9CB0090FADA /* ClassifierViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifierViewModel.swift; sourceTree = "<group>"; };
 		9C67A90E2822CA250090FADA /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
 		9C67A9102822CA760090FADA /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
-		9C67A913282817620090FADA /* NetworkReceive */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = NetworkReceive; path = ../NetworkReceive; sourceTree = "<group>"; };
 		9C67A915282817F50090FADA /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		9C67A917282820D90090FADA /* CatBreedsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsResponse.swift; sourceTree = "<group>"; };
-		9C67A919282822B00090FADA /* ServiceLocator */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ServiceLocator; path = ../ServiceLocator; sourceTree = "<group>"; };
 		9C67A91A282823120090FADA /* Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
 		9C67A921282826E70090FADA /* CatBreedsReceive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsReceive.swift; sourceTree = "<group>"; };
+		9CAC88072831401500956095 /* NetworkReceive */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = NetworkReceive; path = Modules/NetworkReceive; sourceTree = "<group>"; };
+		9CAC88092831406900956095 /* ServiceLocator */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ServiceLocator; path = Modules/ServiceLocator; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,14 +71,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C67A91E282823460090FADA /* NetworkReceive in Frameworks */,
-				9C67A920282823490090FADA /* ServiceLocator in Frameworks */,
+				9CAC880B2831407100956095 /* NetworkReceive in Frameworks */,
+				9CAC880D2831407400956095 /* ServiceLocator in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C0DF60A28313F91007E4DF3 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				9CAC88072831401500956095 /* NetworkReceive */,
+				9CAC88092831406900956095 /* ServiceLocator */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 		9C2017B9282AE4EA007179D4 /* BarCharts */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,8 +112,7 @@
 		9C67A8E72822BCA60090FADA = {
 			isa = PBXGroup;
 			children = (
-				9C67A919282822B00090FADA /* ServiceLocator */,
-				9C67A913282817620090FADA /* NetworkReceive */,
+				9C0DF60A28313F91007E4DF3 /* Packages */,
 				9C67A8F22822BCA60090FADA /* CatBreeds */,
 				9C67A8F12822BCA60090FADA /* Products */,
 				9C67A91C282823460090FADA /* Frameworks */,
@@ -197,6 +206,7 @@
 		9C67A91C282823460090FADA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9C0DF60928313F7D007E4DF3 /* NetworkReceive.swift */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -218,8 +228,8 @@
 			);
 			name = CatBreeds;
 			packageProductDependencies = (
-				9C67A91D282823460090FADA /* NetworkReceive */,
-				9C67A91F282823490090FADA /* ServiceLocator */,
+				9CAC880A2831407100956095 /* NetworkReceive */,
+				9CAC880C2831407400956095 /* ServiceLocator */,
 			);
 			productName = CatBreeds;
 			productReference = 9C67A8F02822BCA60090FADA /* CatBreeds.app */;
@@ -424,7 +434,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CatBreeds/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = TWQBM5NDZK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -455,7 +465,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CatBreeds/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = TWQBM5NDZK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -503,11 +513,11 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		9C67A91D282823460090FADA /* NetworkReceive */ = {
+		9CAC880A2831407100956095 /* NetworkReceive */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = NetworkReceive;
 		};
-		9C67A91F282823490090FADA /* ServiceLocator */ = {
+		9CAC880C2831407400956095 /* ServiceLocator */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ServiceLocator;
 		};
