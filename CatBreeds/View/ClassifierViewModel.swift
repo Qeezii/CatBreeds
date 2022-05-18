@@ -26,15 +26,25 @@ final class ClassifierViewModel: ObservableObject {
     var titleBarCharts: String = "Top 3 results"
     var catBreedsArray: [CatBreedsResponse] = []
     var catBreedsDict: [CatBreedsResponse.ID : CatBreedsResponse] = [:]
-    let modelName: MobileNetV2 = {
+    let modelName: CatBreedsModel = {
         do {
             let config = MLModelConfiguration()
-            return try MobileNetV2(configuration: config)
+            return try CatBreedsModel(configuration: config)
         } catch {
             print(error)
             fatalError("Couldn`t create MlModel")
         }
     }()
+    
+//    let modelName: MobileNetV2 = {
+//        do {
+//            let config = MLModelConfiguration()
+//            return try MobileNetV2(configuration: config)
+//        } catch {
+//            print(error)
+//            fatalError("Couldn`t create MlModel")
+//        }
+//    }()
     
     init() {
         if let api = Api.shared.catBreeds {

@@ -10,8 +10,6 @@
 		9C057882282A5B0800C1F652 /* AllCatBreedsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C057881282A5B0800C1F652 /* AllCatBreedsView.swift */; };
 		9C057884282A5F7D00C1F652 /* CatBreedDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C057883282A5F7D00C1F652 /* CatBreedDetail.swift */; };
 		9C057886282A971000C1F652 /* SFSafariViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C057885282A971000C1F652 /* SFSafariViewWrapper.swift */; };
-		9C05788A282AB92A00C1F652 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9C057889282AB92A00C1F652 /* Resnet50.mlmodel */; };
-		9C05788C282ABA0400C1F652 /* WhatIsCatBreedsModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9C05788B282ABA0400C1F652 /* WhatIsCatBreedsModel.mlmodel */; };
 		9C201797282ADAC6007179D4 /* BarChartsVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C201796282ADAC6007179D4 /* BarChartsVView.swift */; };
 		9C20179B282ADF1E007179D4 /* AxisParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C20179A282ADF1E007179D4 /* AxisParameters.swift */; };
 		9C20179F282AE24B007179D4 /* ChartHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C20179E282AE24B007179D4 /* ChartHeaderView.swift */; };
@@ -33,14 +31,14 @@
 		9C67A922282826E70090FADA /* CatBreedsReceive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C67A921282826E70090FADA /* CatBreedsReceive.swift */; };
 		9CAC880B2831407100956095 /* NetworkReceive in Frameworks */ = {isa = PBXBuildFile; productRef = 9CAC880A2831407100956095 /* NetworkReceive */; };
 		9CAC880D2831407400956095 /* ServiceLocator in Frameworks */ = {isa = PBXBuildFile; productRef = 9CAC880C2831407400956095 /* ServiceLocator */; };
+		9CCE02E028353D68002FEB8C /* CatBreedsModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9CCE02DF28353D68002FEB8C /* CatBreedsModel.mlmodel */; };
+		9CF2436128318491006DA8E3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9CF2435F28318490006DA8E3 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9C057881282A5B0800C1F652 /* AllCatBreedsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCatBreedsView.swift; sourceTree = "<group>"; };
 		9C057883282A5F7D00C1F652 /* CatBreedDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedDetail.swift; sourceTree = "<group>"; };
 		9C057885282A971000C1F652 /* SFSafariViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSafariViewWrapper.swift; sourceTree = "<group>"; };
-		9C057889282AB92A00C1F652 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
-		9C05788B282ABA0400C1F652 /* WhatIsCatBreedsModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = WhatIsCatBreedsModel.mlmodel; sourceTree = "<group>"; };
 		9C0DF60928313F7D007E4DF3 /* NetworkReceive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkReceive.swift; path = Modules/NetworkReceive/Sources/NetworkReceive/NetworkReceive.swift; sourceTree = "<group>"; };
 		9C201796282ADAC6007179D4 /* BarChartsVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartsVView.swift; sourceTree = "<group>"; };
 		9C20179A282ADF1E007179D4 /* AxisParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxisParameters.swift; sourceTree = "<group>"; };
@@ -64,6 +62,8 @@
 		9C67A921282826E70090FADA /* CatBreedsReceive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsReceive.swift; sourceTree = "<group>"; };
 		9CAC88072831401500956095 /* NetworkReceive */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = NetworkReceive; path = Modules/NetworkReceive; sourceTree = "<group>"; };
 		9CAC88092831406900956095 /* ServiceLocator */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ServiceLocator; path = Modules/ServiceLocator; sourceTree = "<group>"; };
+		9CCE02DF28353D68002FEB8C /* CatBreedsModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CatBreedsModel.mlmodel; sourceTree = "<group>"; };
+		9CF2436028318491006DA8E3 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +130,7 @@
 		9C67A8F22822BCA60090FADA /* CatBreeds */ = {
 			isa = PBXGroup;
 			children = (
+				9CF2435F28318490006DA8E3 /* Localizable.strings */,
 				9C67A8F32822BCA60090FADA /* CatBreedsApp.swift */,
 				9C67A91A282823120090FADA /* Configurator.swift */,
 				9C67A9012822C7540090FADA /* Model */,
@@ -156,8 +157,7 @@
 			children = (
 				9C2017BA282AE500007179D4 /* BarCharts */,
 				9C67A90E2822CA250090FADA /* MobileNetV2.mlmodel */,
-				9C057889282AB92A00C1F652 /* Resnet50.mlmodel */,
-				9C05788B282ABA0400C1F652 /* WhatIsCatBreedsModel.mlmodel */,
+				9CCE02DF28353D68002FEB8C /* CatBreedsModel.mlmodel */,
 				9C67A915282817F50090FADA /* Api.swift */,
 				9C67A917282820D90090FADA /* CatBreedsResponse.swift */,
 				9C67A921282826E70090FADA /* CatBreedsReceive.swift */,
@@ -257,6 +257,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 9C67A8E72822BCA60090FADA;
 			productRefGroup = 9C67A8F12822BCA60090FADA /* Products */;
@@ -274,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C67A8FB2822BCA60090FADA /* Preview Assets.xcassets in Resources */,
+				9CF2436128318491006DA8E3 /* Localizable.strings in Resources */,
 				9C67A8F82822BCA60090FADA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,7 +287,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C05788A282AB92A00C1F652 /* Resnet50.mlmodel in Sources */,
 				9C67A8F62822BCA60090FADA /* ContentView.swift in Sources */,
 				9C67A91B282823120090FADA /* Configurator.swift in Sources */,
 				9C057886282A971000C1F652 /* SFSafariViewWrapper.swift in Sources */,
@@ -295,13 +296,13 @@
 				9C67A90F2822CA250090FADA /* MobileNetV2.mlmodel in Sources */,
 				9C67A9112822CA760090FADA /* ImagePickerView.swift in Sources */,
 				9C2017AD282AE3BD007179D4 /* ChartAreaHView.swift in Sources */,
-				9C05788C282ABA0400C1F652 /* WhatIsCatBreedsModel.mlmodel in Sources */,
 				9C67A916282817F50090FADA /* Api.swift in Sources */,
 				9C057882282A5B0800C1F652 /* AllCatBreedsView.swift in Sources */,
 				9C057884282A5F7D00C1F652 /* CatBreedDetail.swift in Sources */,
 				9C201797282ADAC6007179D4 /* BarChartsVView.swift in Sources */,
 				9C67A918282820D90090FADA /* CatBreedsResponse.swift in Sources */,
 				9C2017B3282AE42D007179D4 /* YaxisHView.swift in Sources */,
+				9CCE02E028353D68002FEB8C /* CatBreedsModel.mlmodel in Sources */,
 				9C67A8F42822BCA60090FADA /* CatBreedsApp.swift in Sources */,
 				9C20179B282ADF1E007179D4 /* AxisParameters.swift in Sources */,
 				9C67A922282826E70090FADA /* CatBreedsReceive.swift in Sources */,
@@ -311,6 +312,17 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9CF2435F28318490006DA8E3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CF2436028318491006DA8E3 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9C67A8FC2822BCA60090FADA /* Debug */ = {

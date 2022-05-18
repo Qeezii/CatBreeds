@@ -1,0 +1,4 @@
+/* Bundle name */
+"CFBundleName" = "CatBreeds";
+/* Privacy - Camera Usage Description */
+"NSCameraUsageDescription" = "";
