@@ -18,7 +18,6 @@ final class ClassifierViewModel: ObservableObject {
 
     @Published var selectedImage: UIImage?
     @Published var resultClassify: String?
-    @Published var topResult: String? // ?
     @Published var barChartsData: [(String, Double)] = []
     @Published var opacityForDownloadingInProgress: Double = 100.0
     @Published var opacityForDownloadingEnd: Double = 0.0
