@@ -5,6 +5,9 @@
 //  Created by Alexey Poletaev on 08.05.2022.
 //
 
+// swiftlint: disable identifier_name
+// swiftlint: disable line_length
+
 import Foundation
 
 struct CatBreedsResponse: Codable, Identifiable {
@@ -17,7 +20,7 @@ struct CatBreedsResponse: Codable, Identifiable {
     var life_span: String
     var wikipedia_url: String?
     var image: ImageCatBreed?
-    
+
     enum CodingKeys: String, CodingKey {
         case weight
         case id
@@ -29,7 +32,7 @@ struct CatBreedsResponse: Codable, Identifiable {
         case wikipedia_url
         case image
     }
-    
+
     init() {
         id = "abys"
         name = "Abyssinian"

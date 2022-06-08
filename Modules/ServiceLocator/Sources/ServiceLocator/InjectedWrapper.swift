@@ -11,10 +11,10 @@ import SwiftUI
 @propertyWrapper
 
 public struct Injected<T: AnyObject> {
-    
+
     private var service: T?
     private weak var serviceManager = ServiceLocator.shared
-    
+
     public var wrappedValue: T? {
         mutating get {
             if service == nil {
@@ -26,11 +26,11 @@ public struct Injected<T: AnyObject> {
             service = newValue
         }
     }
-    
-    public var projectedValue:Injected<T> {
+
+    public var projectedValue: Injected<T> {
         get {return self}
         mutating set {self = newValue}
     }
-    
+
     public init() {}
 }

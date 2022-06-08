@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct ChartAreaHView: View {
-    
+
     var data: [(String, Double)]
     var scaleFactor: Double
-    
+
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 5.0)
                 .fill(Color.white)
-            
+
             VStack {
                 VStack(spacing: 0) {
                     ForEach(data, id: \.0) { item in

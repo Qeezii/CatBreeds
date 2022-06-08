@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ChartHeaderView: View {
-    
+
     var title: String
-    
+
     var body: some View {
         VStack {
             Text(title)

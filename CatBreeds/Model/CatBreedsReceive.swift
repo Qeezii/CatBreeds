@@ -9,13 +9,14 @@ import Foundation
 import NetworkReceive
 
 final class CatBreedsReceive {
+
     private var networkReceive: NetworkReceive
-    
+
     init(networkReceive: NetworkReceive) {
         self.networkReceive = networkReceive
     }
-    
-    func getCatBreedsReceive(for url: URL, complition: @escaping ([CatBreedsResponse]) -> () ) {
+
+    func getCatBreedsReceive(for url: URL, complition: @escaping ([CatBreedsResponse]) -> Void ) {
         networkReceive.fetch([CatBreedsResponse].self, for: url) { result in
             switch result {
             case .success(let response):

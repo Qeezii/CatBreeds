@@ -10,9 +10,9 @@ import ServiceLocator
 import NetworkReceive
 
 final class Configurator {
-    
+
     static let shared = Configurator()
-    
+
     func register() {
         ServiceLocator.shared.addServices(service: NetworkReceive())
     }

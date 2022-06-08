@@ -8,24 +8,24 @@
 import SwiftUI
 
 struct BarChartsVView: View {
-    
+
     @ObservedObject var classifierViewModel: ClassifierViewModel
-    
+
     var body: some View {
-        
-        ScrollView() {
+
+        ScrollView {
             VStack {
                 VStack {
-                    
+
                     Spacer()
-                        .frame(height:20)
-                    
+                        .frame(height: 20)
+
                     BarChartHView(
                         classifierViewModel: classifierViewModel)
                         .frame(width: 400, height: 450, alignment: .center)
-                    
+
                     Spacer()
-                        .frame(height:50)
+                        .frame(height: 50)
                 }
             }
         }
