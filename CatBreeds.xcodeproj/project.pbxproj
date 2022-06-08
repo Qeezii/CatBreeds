@@ -219,6 +219,7 @@
 			buildConfigurationList = 9C67A8FE2822BCA60090FADA /* Build configuration list for PBXNativeTarget "CatBreeds" */;
 			buildPhases = (
 				9C67A8EC2822BCA60090FADA /* Sources */,
+				9C79163028509E0B004DDC0E /* Swiftlint */,
 				9C67A8ED2822BCA60090FADA /* Frameworks */,
 				9C67A8EE2822BCA60090FADA /* Resources */,
 			);
@@ -243,7 +244,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1330;
-				LastUpgradeCheck = 1330;
+				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					9C67A8EF2822BCA60090FADA = {
 						CreatedOnToolsVersion = 13.3.1;
@@ -260,6 +261,8 @@
 				ru,
 			);
 			mainGroup = 9C67A8E72822BCA60090FADA;
+			packageReferences = (
+			);
 			productRefGroup = 9C67A8F12822BCA60090FADA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -281,6 +284,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9C79163028509E0B004DDC0E /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9C67A8EC2822BCA60090FADA /* Sources */ = {
@@ -329,6 +353,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -389,6 +414,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";

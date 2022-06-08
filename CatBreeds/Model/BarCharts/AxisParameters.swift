@@ -4,14 +4,18 @@
 //
 //  Created by Alexey Poletaev on 10.05.2022.
 //
+// swiftlint: disable cyclomatic_complexity
 
 import Foundation
 
 struct AxisParameters {
-    static func getTicks(top:Int) -> [Int] {
+
+    static func getTicks(top: Int) -> [Int] {
+
         var step = 0
         var high = top
-        switch(top) {
+
+        switch top {
         case 0...8:
             step = 1
         case 9...17:
@@ -37,10 +41,11 @@ struct AxisParameters {
         default:
             step = 10000
         }
+
         high = ((top/step) * step) + step + step
-        var ticks:[Int] = []
-        for i in stride(from: 0, to: high, by: step) {
-            ticks.append(i)
+        var ticks: [Int] = []
+        for ind in stride(from: 0, to: high, by: step) {
+            ticks.append(ind)
         }
         return ticks
     }

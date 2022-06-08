@@ -8,14 +8,13 @@
 import SwiftUI
 
 struct CatBreedDetail: View {
-    
+
     @State var showSafari: Bool = false
     var catBreed: CatBreedsResponse
-    
-    var body: some View {
 
+    var body: some View {
         VStack {
-            
+
             GeometryReader { geo in
                 AsyncImage(url: URL(string: catBreed.image?.url ?? "https://http.cat/400")) { image in
                     image
@@ -27,11 +26,11 @@ struct CatBreedDetail: View {
                 .frame(width: geo.size.width, height: geo.size.height)
                 .clipShape(RoundedRectangle(cornerRadius: 25))
             }
-            
+
             Text(catBreed.name)
                 .font(.title)
                 .padding()
-            
+
             ScrollView {
                 VStack(alignment: .leading) {
                     Text("Country: \(catBreed.origin)").padding(.bottom, 5)

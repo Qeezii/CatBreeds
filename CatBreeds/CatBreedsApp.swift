@@ -9,14 +9,14 @@ import SwiftUI
 
 @main
 struct CatBreedsApp: App {
-    
+
     @Environment(\.scenePhase) var scenePhase
-    
+
     init() {
         print("📟 AppSUIApp application is starting up. App initialiser.")
         Configurator.shared.register()
     }
-    
+
     var body: some Scene {
         WindowGroup {
             ContentView()
